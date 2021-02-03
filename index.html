@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="log-in ">
+        <div class="">
+            <form id="login-form">
+                <label> MONSTER LOGIN</label><br>
+                <input type="text" placeholder="Enter your email..." id="email" style="color: black"><br>
+                <input type="password" placeholder="password" id="password" style="color: black"><br>
+                <input type="submit" value="Log in">
+                <input type="submit" value="Register">
+            </form>
+            <button onclick="signOut()" id="logout" style="display:none">Log out</button>
+        </div>
+        <div class="tab">
+
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar" style="background-color:black"></span>
+                    <span class="icon-bar" style="background-color:black"></span>
+                    <span class="icon-bar" style="background-color:black"></span>
+                </button>
+                <a class="" href="index.html">
+                    <svg width="60" height="60">
+                        <circle cx="30" cy="30" r="25" stroke="black" stroke-width="4" fill="none" />
+                        <circle cx="40" cy="30" r="4" fill="black" />
+                        Sorry, your browser does not support inline SVG.
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse menu" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="activ" href="index.html">Home</a></li>
+                    <li><a href="tuts.html">Tutorials</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6">
+                <h1>Welcome to the Monster School of Drawing</h1>
+                <p>Monster school of drawing, in resemblance to the Royal College of Arts, provides
+                    high-quality art education for children age 5-18 year old. To learn how to draw a monster
+                    go to the <a href="tuts.html">tutorials</a> section. For inspiration
+                    and monster support visit our <a href="gallery.html">gallery</a>.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/monster1.png" class="" style="width:100%">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Roar or HRROOGA to us on <a href="https://twitter.com/yuliy86677973">Twitter</a>.
+        </p>
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

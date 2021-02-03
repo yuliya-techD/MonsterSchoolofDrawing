@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Drawing Tutorials</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+
+  <div class="log-in ">
+    <div class="">
+      <form id="login-form">
+        <label> MONSTER LOGIN</label><br>
+        <input type="text" placeholder="Enter your email..." id="email" style="color: black"><br>
+        <input type="password" placeholder="password" id="password" style="color: black"><br>
+        <input type="submit" value="Log in">
+        <input type="submit" value="Register">
+      </form>
+      <button onclick="signOut()" id="logout" style="display:none">Log out</button>
+    </div>
+    <div class="tab">
+
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar" style="background-color:black"></span>
+          <span class="icon-bar" style="background-color:black"></span>
+          <span class="icon-bar" style="background-color:black"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <svg width="60" height="60">
+            <circle cx="30" cy="30" r="25" stroke="black" stroke-width="4" fill="none" />
+            <circle cx="30" cy="40" r="4" fill="black" />
+            Sorry, your browser does not support inline SVG.
+          </svg>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse menu" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="activ"><a class="activ" href="tuts.html">Tutorials</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-8">
+        <h2>DRAWING TUTORIAL 1</h2>
+        <h5>published, Dec 7, 2020</h5>
+        <p>Follow and draw</p>
+        <br>
+        <iframe width="100%" height="480" src="https://www.youtube.com/embed/JFhqGrlSp8c" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+        <div class="col-sm-8" style="margin: 20px 0px;">
+            <label for="share" class="text-center">When you finish drawing, <br>
+              take a picture of your
+              monster and</label>
+            <input type="file" id="share-file" name="share" accept="image/png, image/jpeg">
+            <input type="submit" value="Share on Twitter"  onclick="getImg()" class="share-btn">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" style="margin-bottom:0">
+    <p>Roar or HRROOGA to us on <a href="https://twitter.com/yuliy86677973">Twitter</a>.
+    </p>
+  </div>
+
+</body>
+
+</html>

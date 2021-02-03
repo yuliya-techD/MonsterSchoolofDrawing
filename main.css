@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 250, 250);
+    font-family: "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.log-in {
+    height: 25vh;
+    color: ghostwhite;
+    background-color: black;
+}
+
+.logo {
+    width: 30%;
+    min-width: 70px;
+    max-width: 150px;
+    margin: 10px auto;
+    border: 1px solid black;
+    min-height: auto;
+}
+
+.activ {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.menu ul {
+    margin-top: 90px;
+    border-bottom: 2px solid black;
+    float: right;
+    padding-left: 40%;
+    padding-right: 10%;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+}
+
+.menu ul li a {
+    padding: 0px 20px;
+    font-size: 20px;
+    border-left: 2px solid black;
+    border-top-left-radius: 15px;
+}
+
+.share-btn{
+    width:200px;
+    height: 50px;
+    background-color: rgb(61, 111, 218);
+    font-size: 22px;
+    border-radius: 15px;
+    border: none;
+    color: cornsilk;
+    margin-left: calc((100%-200px)/2);
+}
+
+.footer {
+    height: 20vh;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.footer p {
+    text-align: center;
+    padding: 5vh;
+}
+
+.footer a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.hidden {
+    display: hidden;
+}
+
+.non-display {
+    display: none;
+}
+
+.left {
+    float: left;
+}
